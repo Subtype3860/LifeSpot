@@ -4,4 +4,9 @@
         <TargetFramework>net6.0</TargetFramework>
     </PropertyGroup>
 
+    <ItemGroup>
+      <Folder Include="Static\JS\" />
+      <Folder Include="Views\Shared" />
+    </ItemGroup>
+
 </Project>
