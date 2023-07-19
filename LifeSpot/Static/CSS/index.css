@@ -80,10 +80,6 @@ header, footer, body, .video-container {
 #find{
    width: 80%;
 }
-form p:hover{
-   background-color: #111 !important;
-   color: darkgray !important;
-}
 #find:hover{
    background-color: gainsboro;
    color: blue;
