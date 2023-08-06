@@ -56,6 +56,7 @@ body,
 .navbar,
 .video-container {
    font-family: "Helvetica 65 Medium", sans-serif;
+   margin-top: 10px;
 }
 
 .navbar p:hover {
@@ -76,9 +77,6 @@ header div {
 }
 header, footer, body, .video-container {
    background-color: linen;
-}
-#find{
-   width: 80%;
 }
 #find:hover{
    background-color: gainsboro;
