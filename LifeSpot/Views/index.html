@@ -6,22 +6,34 @@
     <link href="../Static/CSS/index.css" rel="stylesheet" type="text/css">
     <script type="text/javascript" src="../Static/JS/index.js"></script>
     <script>
-        let session = handleSession();
-  
-        // Логируем в консоль.
-        sessionLog(session)
+        // Проверка на возраст
+        //checkAge();
+
+        // сохранение сессии
+        handleSession()
+
+        // вывод данных сессии в консоль
+        sessionLog();
+
+        // функция для получения пользовательского ввода
+        const inputParseFunction = function () {
+            return document.getElementsByTagName('input')[0].value.toLowerCase();
+        }
     </script>
 </head>
 <body>
     <div>
-        <header>
+        <header id="header-index">
             <h1>LifeSpot - прямые трансляции с улиц</h1>
             <p>Покажем, что происходит прямо сейчас</p>
-            <label>
-                Поиск
-                <input id="find" type="text" oninput="contentFilter()" size="50">
-            </label>
-            <br>
+            <input type="text" oninput="
+        // Функция объявлена через declaration
+       const inputParseFunction = function(){
+           return document.getElementsByTagName('input')[0].value.toLowerCase();
+       }
+
+       // Вызов (функция в аргумент передаётся без круглых скобок)
+       filterContent( inputParseFunction )" size=50%>
         </header>
         <aside id="sidebar">
             <div class="navbar">
@@ -59,20 +71,5 @@
             <p>Связаться с нами: contact@lifespot.ru</p>
         </footer>
     </div>
-    <script>
-        // Получим все контейнеры с видео
-        let element = document.getElementsByClassName('video-container');
-        // Пробежимся в цикле по контейнерам
-        for (let i = 0; i <= element.length; i++) {
-
-            // Получим всё что внутри контейнера
-            let childElements = element[i];
-            // Получим элемент, содержащий описание видео
-            // Он у нас единственный с тегом h3, снова воспользуемся поиском по тегу,
-            let videoDescription = childElements.getElementsByTagName('h3')[0];
-            // Выведем его текст на консоль
-            console.log(videoDescription.innerText);
-        }
-    </script>
-</body >
-</html >
+</body>
+</html>
