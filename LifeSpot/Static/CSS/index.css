@@ -19,6 +19,7 @@ header {
 footer {
    position: absolute;
    bottom: 0;
+   height: 10px;
    font-size: medium;
    color: dimgrey;
    line-height: 66%;
@@ -81,4 +82,17 @@ header, footer, body, .video-container {
 #find:hover{
    background-color: gainsboro;
    color: blue;
+}
+.review-container,.review-button{
+   display: inline-block;
+   margin-top: 0.5em;
+   padding-left: 1%;
+   padding-top: 1%;
+}
+ 
+.review-text{
+   display: block;
+   margin-top: 0.5em;
+   padding-left: 1%;
+   padding-top: 1%;
 }
